@@ -1,0 +1,222 @@
+{
+    "autor": "Alexander Aparicio Meza",
+    "projects":[
+        {
+            "id":"aplic",
+            "cards":[
+
+                {
+                    "url": "app/assets/cards/m1.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m2.png",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m3.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m4.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m5.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m6.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m7.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m8.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/m9.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc1.png",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc2.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc3.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc4.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc5.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc6.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc7.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc8.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/pc9.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                }
+        
+            ]
+        },
+
+        {
+
+            "id":"blog",
+            "cards":[
+                {
+                    "url": "app/assets/cards/blog-m1.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-m2.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-m3.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-m4.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-m5.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-m6.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-pc1.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-pc2.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-pc3.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/blog-pc4.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                }
+
+            ]
+
+        },
+
+        {
+
+            "id":"dioses",
+            "cards":[
+
+                {
+                    "url": "app/assets/cards/dioses-m1.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/dioses-m2.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/dioses-pc1.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/dioses-pc2.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                }
+                
+            ]
+
+        },
+
+        {
+
+            "id":"sumini",
+            "cards":[
+                
+                {
+                    "url": "app/assets/cards/sumini-m1.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/sumini-m2.jpg",
+                    "leyenda": "Mobile",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/sumini-pc1.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                },
+                {
+                    "url": "app/assets/cards/sumini-pc2.jpg",
+                    "leyenda": "Desktop",
+                    "class": ""
+                }
+                
+            ]
+
+        }
+        
+    ]
+}

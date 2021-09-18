@@ -1,0 +1,46 @@
+{
+    "tema":"Historia",
+    "autor":"Alexander Meza",
+    "preguntas":[
+        {
+            "id":"0",
+            "pregunta":"¿En que año se estrenó el juego Adopt Me!?"
+        },
+        {
+            "id":"1",
+            "pregunta":"¿En que plataforma fue creado Adopt Me!?"
+        },
+        {
+            "id":"2",
+            "pregunta":"¿De que trata el juego Adopt Me!?"
+        },
+        {
+            "id":"3",
+            "pregunta":"¿En que año fue creado Minecraft?"
+        },
+        {
+            "id":"4",
+            "pregunta":"¿Quién es el dueño actual de Minecraft?"
+        },
+        {
+            "id":"5",
+            "pregunta":"¿Qué significa: /gamerule keepInventory true, en Minecraft?"
+        },
+        {
+            "id":"6",
+            "pregunta":"¿Qué significa: /time set 0, en Minecraft?"
+        },
+        {
+            "id":"7",
+            "pregunta":"¿Cuántos colores de Among us hay?"
+        },
+        {
+            "id":"8",
+            "pregunta":"¿Cuántos mapas hay en Among us?"
+        },
+        { 
+            "id":"9",
+            "pregunta":"¿En un inicio Tenis de mesa y Ping pong eran lo mismo?"
+        }
+    ]
+}

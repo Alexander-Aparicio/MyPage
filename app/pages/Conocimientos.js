@@ -1,0 +1,7 @@
+const Conocimientos = ()=>{
+
+
+
+}
+
+export { Conocimientos }
