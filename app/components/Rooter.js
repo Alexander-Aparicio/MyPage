@@ -1,3 +1,4 @@
+import { Conocimientos } from "../pages/Conocimientos.js"
 import { Inicio } from "../pages/Inicio.js"
 import { Portafolio } from "../pages/Portafolio.js"
 import { SobreMi } from "../pages/SobreMi.js"
@@ -7,6 +8,7 @@ import { RevertFixed } from "./helpers/RevertFixed.js"
 import { Menu, MenuTop } from "./Menu.js"
 import { MenuMobile } from "./MenuMobile.js"
 import { Navigation } from "./Navigation.js"
+import { ProgressBar } from "./ProgressBar.js"
 import { SocialMedia } from "./SocialMedia.js"
 
 const Rooter = ()=>{
@@ -57,8 +59,11 @@ const Rooter = ()=>{
                 $main.innerHTML = ''
                 
                 $main.appendChild(SocialMedia())
+                $main.appendChild(Conocimientos())
                 
                 MenuTop()
+                MenuMobile()
+                ProgressBar()
     
                 break;
     

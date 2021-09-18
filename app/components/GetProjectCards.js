@@ -130,6 +130,9 @@ const ProjectCards = async()=>{
                     if(el.classList.contains('active')) el.classList.remove('active')
 
                 })
+            }else if(e.target && e.target === 'P'){
+
+                clearInterval(slider)
             }
         })
     }
