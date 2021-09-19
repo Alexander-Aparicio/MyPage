@@ -51,6 +51,7 @@ const Rooter = ()=>{
                 $main.appendChild(Portafolio())
                 MenuTop()
                 ProjectCards()
+                MenuMobile()
      
                 break;
     
@@ -59,12 +60,13 @@ const Rooter = ()=>{
                 $main.innerHTML = ''
                 
                 $main.appendChild(SocialMedia())
-                $main.appendChild(Conocimientos())
+                $main.appendChild( await Conocimientos())
                 
                 MenuTop()
                 MenuMobile()
-                ProgressBar()
-    
+                await ProgressBar()
+                RevertFixed('footer')
+
                 break;
     
             case `#/Sobre-mi`:

@@ -1,50 +1,47 @@
-const ProgressBar = ()=>{
+const ProgressBar = async()=>{
 
-    const effect = ()=>{
 
-        const temas = [
+    const url = 'http://localhost:5500/app/json/Specialties.json'
 
-            {tema: 'Javascript', nivel:75, faltante:'25%'},
-            {tema: 'Css', nivel:70, faltante:'30%'},
-            {tema: 'Styled Components', nivel:70, faltante:'30%'},
-            {tema: 'Firebase', nivel:40, faltante:'60%'},
-            {tema: 'Html', nivel:85, faltante:'15%'},
-            {tema: 'React', nivel:55, faltante:'45%'},
-            {tema: 'SEO', nivel:60, faltante:'40%'},
-            {tema: 'Figma', nivel:60, faltante:'40%'},
-            {tema: 'WordPress', nivel:80, faltante:'20%'},
-            {tema: 'Git & Github', nivel:45, faltante:'55%'},
-            {tema: 'Marketing Digital', nivel:65, faltante:'35%'}
-    
-        ]        
+    await fetch(url).then((res)=>{
 
+        return res.ok ? res.json() : Promise.reject(error)
+
+    }).then((res)=>{
+
+        const temas = res.specialties
 
         temas.forEach(el => {
+
+            const idP = `${el.tema}`.replace(/\s+/g, '')
             
-            const bar = document.getElementById(`${el.tema}`)
+            const percentage = document.getElementById(idP)
+            const bar = document.querySelector(`.${idP}`)
+            
+            let meter = 1
 
-            let width = 1
-
+            let habilidad = `${el.nivel}`.slice(0,-1)
+    
             const id = setInterval(() => {
+    
+                if( meter >= Number(habilidad)){
 
-                if(width >= `${el.nivel}`){
+                    percentage.textContent = `${el.nivel}`
+                    bar.style.setProperty('width',`${el.nivel}`)
                     clearInterval(id)
+
                 }else{
-
-                    width++
-
-                    bar.style.width = width + '%'
+    
+                    meter++
+    
+                    bar.style.width = meter +'%'
+                    percentage.textContent = `${meter}%`
                 }
                 
-            }, 25);
-
-        });
-        
-
-    }
-
-    setTimeout(effect(),5)
-
+            }, 25)
+    
+        })
+    })
 }
 
 export {ProgressBar}

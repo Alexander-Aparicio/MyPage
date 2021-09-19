@@ -1,6 +1,6 @@
 import { TitleOfPages } from "../components/helpers/Titles.js"
 
-const Conocimientos = ()=>{
+const Conocimientos = async()=>{
 
     const d = document
 
@@ -13,46 +13,68 @@ const Conocimientos = ()=>{
     
 // ----------------------------------------------------------------------------
 
-    const temas = [
-
-        {tema: 'Javascript', nivel:'75%', faltante:'25%'},
-        {tema: 'Css', nivel:'70%', faltante:'30%'},
-        {tema: 'Styled Components', nivel:'70%', faltante:'30%'},
-        {tema: 'Firebase', nivel:'40%', faltante:'60%'},
-        {tema: 'Html', nivel:'85%', faltante:'15%'},
-        {tema: 'React', nivel:'55%', faltante:'45%'},
-        {tema: 'SEO', nivel:'60%', faltante:'40%'},
-        {tema: 'Figma', nivel:'60%', faltante:'40%'},
-        {tema: 'WordPress', nivel:'80%', faltante:'20%'},
-        {tema: 'Git & Github', nivel:'45%', faltante:'55%'},
-        {tema: 'Marketing Digital', nivel:'65%', faltante:'35%'}
-
-    ]
+    const url = 'http://localhost:5500/app/json/Specialties.json'
 
     const fragmentBar = d.createDocumentFragment()
 
-    temas.forEach(el => {
+    await fetch(url).then((res)=>{
+
+        console.log(res)
+
+        return res.ok ? res.json() : Promise.reject(error)
+
+    }).then((res)=>{
+
+        const temas = res.specialties
+
+        temas.forEach(el => {
+
+            const container = d.createElement('div')
+            container.setAttribute('class','containerSpecialty')
+
+            const barBox  = d.createElement('div')
+            barBox.setAttribute('class','barBox')
+
+            const idP = `${el.tema}`.replace(/\s+/g, '')
+            console.log(idP)
+    
+            const bar = d.createElement('div')
+            bar.setAttribute('class',`bar ${idP} boxShadowStrong`)
         
-        const barBox  = d.createElement('div')
-        barBox.setAttribute('class','barBox')
 
-        const bar = d.createElement('div')
-        bar.setAttribute('class','bar')
-        bar.setAttribute('data-nivel', `${el.nivel}`)
-        bar.setAttribute('id',`${el.tema}`)
-        // bar.style.setProperty('width',`${el.nivel}`)
+            const p = d.createElement('p')
+            p.setAttribute('id',idP)
+            p.setAttribute('class','percentage')
 
-        barBox.appendChild(bar)
+            const containerName = d.createElement('div')
+            containerName.setAttribute('class','specialty')
 
-        fragmentBar.appendChild(barBox)
+            const name = d.createElement('p')
+            name.setAttribute('class','nameSpecialty')
+            name.textContent = el.tema
 
-    });
+            const img = d.createElement('img')
+            img.setAttribute('class','logoSpecialty')
+            img.setAttribute('src',`${el.img}`)
+            if(el.id) img.setAttribute('id', `${el.id}`)
+
+            container.appendChild(barBox)
+            barBox.appendChild(bar)
+            bar.appendChild(p)
+
+            containerName.appendChild(name)
+            containerName.appendChild(img)
+
+            container.appendChild(containerName)
+    
+            fragmentBar.appendChild(container)
+    
+        })
+    })
+
+    
 
     conocimientos.appendChild(fragmentBar)
-
-
-
-
 
 // ----------------------------------------------------------------------------
 

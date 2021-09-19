@@ -1,0 +1,17 @@
+{
+    "specialties":[
+
+        {"tema": "Firebase", "nivel":"50%", "img":"app/assets/logos-svg/firebase_logo.svg"},
+        {"tema": "React", "nivel":"55%", "img":"app/assets/logos-svg/react_original_logo.svg", "id":"reactLogo"},
+        {"tema": "Styled Components", "nivel":"65%", "img":"app/assets/logos-svg/styled-component.svg"},
+        {"tema": "Javascript", "nivel":"80%", "img":"app/assets/logos-svg/javascript_logo.svg"},
+        {"tema": "Css", "nivel":"75%", "img":"app/assets/logos-svg/css.svg"},
+        {"tema": "Html", "nivel":"85%", "img":"app/assets/logos-svg/file_type_html.svg"},
+        {"tema": "Git - Github", "nivel":"50%", "img":"app/assets/logos-svg/github_original.svg"},
+        {"tema": "Figma", "nivel":"60%", "img":"app/assets/logos-svg/figma_logo.svg"},
+        {"tema": "SEO", "nivel":"65%", "img":"app/assets/logos-svg/launch_122853.svg"},
+        {"tema": "WordPress", "nivel":"75%", "img":"app/assets/logos-svg/wordpress_icon.png"},
+        {"tema": "Customer Journey", "nivel":"65%", "img":"app/assets/logos-svg/map.svg"}
+
+    ]
+}

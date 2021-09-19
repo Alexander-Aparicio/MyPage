@@ -206,10 +206,10 @@ const Portafolio = ()=>{
 
     
 
-    setTimeout(() => {
-        const $menu = d.querySelector('.menu')
-        addClass($menu,'none')
-    }, 5);
+    // setTimeout(() => {
+    //     const $menu = d.querySelector('.menu')
+    //     addClass($menu,'none')
+    // }, 5);
 
     
     return portafolio

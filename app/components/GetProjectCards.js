@@ -42,6 +42,7 @@ const ProjectCards = async()=>{
     await fetch(URL).then((res)=>{
 
         return res.ok ? res.json() : Promise.reject(error)
+        
     }).then((res)=>{
 
         const projects = res.projects

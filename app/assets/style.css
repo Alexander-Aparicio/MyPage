@@ -434,34 +434,101 @@ strong{font-weight: bold;}
     flex-wrap: wrap;
     height: 100%;
     position: relative;
-    width: 100%;
+    width: 75%;
     justify-content: center;
     align-items: center;
     padding-top:30px;
     padding-bottom:30px;
 }
+.conocimientosPage .h2{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+.containerSpecialty{
+    margin: 15px 10px;
+}
 .barBox{
-    width: 250px;
+    width: 200px;
     height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
     border-radius: 7px;
     background: var(--cWhite);
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 .bar{
-    height: 30px;
+    height: 100%;
     background: var(--cHighlighted);
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
-    transition: 1s linear;
+    /* transition: 1s linear; */
 }
-
-
+.percentage{
+    position: absolute;
+    top:5%;
+    left: 45%;
+    font-size: 1.8rem;
+    font-family: var(--fBranding);
+    color: var(--cCherry);
+}
+.specialty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.nameSpecialty{
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--cHighlighted);
+    text-shadow: 0.5px 0.5px 0.5px #282828;
+}
+.specialty img{
+    width: 40px;
+    filter: drop-shadow(0 0 0.3rem #282828);
+}
 /* ------------ */
 
-/* -------------------------*/
+/* -----------MENU MOBILE-------------*/
+.menuMobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px repeat(4,40px);
+    grid-row-gap:17px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.boxHamburguer{
+    width: 50px;
+    height: 50px;
+    background: var(--cDark);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:center ;
+    z-index: 12;
+    position: fixed;
+    bottom: 25%;
+    right: 7%;
+    cursor: pointer;
+}
+
+.btnHamburguer {
+    background: transparent;
+    border-radius: 100%;
+    width: 70%;
+    height: auto;
+}
 
 /*-------- FOOTER ---------*/
 .footer{
@@ -619,6 +686,8 @@ strong{font-weight: bold;}
     .menuTop{
         position: fixed;
         top: 0;
+        left: revert;
+        bottom: revert;
         display: flex !important;
         flex-direction: row;
         width: auto;
@@ -637,6 +706,9 @@ strong{font-weight: bold;}
     .imgWelcome{
         margin-top: 0;
         margin-bottom: 50px;
+    }
+    .boxHamburguer{
+        display: none;
     }
 
     /* SOBRE MÍ */
@@ -723,11 +795,24 @@ strong{font-weight: bold;}
     -webkit-box-shadow:-2px 1.5px 1px 1px rgba(219, 217, 217, 0.246), -1px -1px 0px 1px rgba(219, 214, 214, 0.068);
     box-shadow: -2px 1.5px 1px 1px rgba(219, 217, 217, 0.246), -1px -1px 0px 1px rgba(219, 214, 214, 0.068);
 }
+.opacity-on-btn{
+    animation: opacity-on 0.5s ease-in-out;
+}
+.opacity-off-btn{
+    animation: opacity-off 0.5s ease-in-out;
+}
+.transtion-off{
+    animation: off-opacity 0.5s ease-in-out;
+}
 
 /* ANIMATIONS */
 @keyframes open-opacity{
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+@keyframes off-opacity{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 @keyframes rotate-menu{
     0%{transform: rotate(0deg);}
@@ -735,4 +820,14 @@ strong{font-weight: bold;}
     
     79%{transform: rotate(-5deg);}
     100%{transform: rotate(-7deg);}
+}
+@keyframes opacity-off{
+    0%{opacity: 1; width: 70%;}
+    50%{opacity: 0.5; width: 35%;}
+    100%{opacity: 0; width: 0px;}
+}
+@keyframes opacity-on{
+    0%{opacity: 0; width: 0%;}
+    50%{opacity: 0.5; width: 35%;}
+    100%{opacity: 1; width: 70%;}
 }
