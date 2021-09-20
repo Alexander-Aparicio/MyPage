@@ -7,10 +7,10 @@ const SocialMedia = ()=>{
 
     const socialNetworks = [
 
-        {redSocial:'Github', id:''},
-        {redSocial:'Facebook', id:''},
-        {redSocial:'Instagram', id:''},
-        {redSocial:'WhatsApp', id:'924998093'}
+        {redSocial:'Github', id:'https://github.com/Alexander-Aparicio?tab=repositories'},
+        {redSocial:'Facebook', id:'https://www.facebook.com/alexander14mr2015'},
+        {redSocial:'Instagram', id:'https://www.instagram.com/alexmr1201/'},
+        {redSocial:'WhatsApp', id:'https://api.whatsapp.com/send?phone=51924998093'}
 
     ]
 
@@ -20,6 +20,8 @@ const SocialMedia = ()=>{
 
         const enlace = d.createElement('a')
         enlace.setAttribute('href', `${el.id}`)
+        enlace.setAttribute('rel', 'nofollow')
+        enlace.setAttribute('target', '_blank')
         
         const card = d.createElement('figure')
         card.setAttribute('class','cardSocial card')

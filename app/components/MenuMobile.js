@@ -32,6 +32,7 @@ const MenuMobile = ()=>{
 
         if(e.target === $btnOpen ){
 
+            $menuMobile.style.setProperty('display','grid')
             addClass($btnOpen,'opacity-off-btn')
             addClass($menuMobile,'transtion')
 
@@ -40,7 +41,6 @@ const MenuMobile = ()=>{
                 addClass($btnOpen,'none')
                 removeClass($btnOpen,'opacity-off-btn')
                 
-                $menuMobile.style.setProperty('display','grid')
                 removeClass($menuMobile,'transtion')
 
                 removeClass($btnClose,'none')

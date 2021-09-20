@@ -356,12 +356,14 @@ strong{font-weight: bold;}
     border: solid 1px #2953;
 }
 .leyenda{
-    color: var(--cCherry);
     font-size: 1.8rem;
     font-family: var(--fBranding);
     letter-spacing: 1.2px;
     text-align: center;
     padding-top: 10px;
+}
+.leyenda a{
+    color: var(--cCherry);
 }
 .imgs-projects{
     margin-top: 25px;
@@ -661,7 +663,7 @@ strong{font-weight: bold;}
         grid-column: 2/3;
         grid-row: 1/10;
         max-width: revert;
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
         background: transparent;
     }
@@ -709,6 +711,7 @@ strong{font-weight: bold;}
         display: block;
         background: var(--cDark);
         border-radius: 7px;
+        max-width: 340px;
     }
     .cardGithub {
         width: 100%;
@@ -718,6 +721,9 @@ strong{font-weight: bold;}
         align-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding:10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .figcGithub {
         font-size: 1.8rem;
@@ -727,7 +733,7 @@ strong{font-weight: bold;}
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     /* FOOTER */
     .footer{

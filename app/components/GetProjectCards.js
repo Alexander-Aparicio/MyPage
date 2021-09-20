@@ -17,10 +17,10 @@ const ProjectCards = async()=>{
         $closeAplic = d.getElementById('closeProjectAplic')
         
 
-    const card = (active,url,leyenda)=>{
+    const card = (active,url,leyenda,href,styleClass)=>{
 
         const card = d.createElement('figure')
-        card.setAttribute('class',`card ${active} none slide ${leyenda}`)
+        card.setAttribute('class',`card ${active} none slide ${styleClass}`)
 
         const img = d.createElement('img')
         img.setAttribute('class','img-card box-shadow')
@@ -30,7 +30,15 @@ const ProjectCards = async()=>{
 
         const figc = d.createElement('figcaption')
         figc.setAttribute('class','leyenda')
-        figc.textContent = `${leyenda}`
+
+        const link = d.createElement('a')
+        link.setAttribute('class','link')
+        link.setAttribute('href',`${href}`)
+        link.setAttribute('rel','nofollow')
+        link.setAttribute('target','_blank')
+        link.textContent = `${leyenda}`
+
+        figc.appendChild(link)
 
         card.appendChild(figc)
 
@@ -54,7 +62,7 @@ const ProjectCards = async()=>{
             
             cards.forEach((input)=>{
  
-                fragment.appendChild(card(`${input.class}`,`${input.url}`,`${input.leyenda}`))
+                fragment.appendChild(card(`${input.class}`,`${input.url}`,`${input.leyenda}`,`${input.href}`,`${input.class}`))
             
             })
 
