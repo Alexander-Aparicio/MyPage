@@ -52,6 +52,7 @@ const Rooter = ()=>{
                 MenuTop()
                 ProjectCards()
                 MenuMobile()
+                RevertFixed('footer')
      
                 break;
     

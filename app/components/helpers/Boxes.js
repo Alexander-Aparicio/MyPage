@@ -41,4 +41,39 @@ const div = (clas,id)=>{
     return box
 }
 
-export { parrafo, image, button, div}
+const enlace = (text,url,styleClass,id,target,rel)=>{
+
+    const a = document.createElement('a')
+    a.textContent = text
+    a.setAttribute('href',`${url}`)
+    if(styleClass) a.setAttribute('class',`${styleClass}`)
+    if(id) a.setAttribute('id',`${id}`)
+    if(target) a.setAttribute('target',`${target}`)
+    if(rel) a.setAttribute('rel',`${rel}`)
+
+    return a
+    
+}
+
+const figc = (text, styleClass, id)=>{
+
+    const figcaption = document.createElement('figcaption')
+    figcaption.textContent = text
+    if(styleClass) figcaption.setAttribute('class',`${styleClass}`)
+    if(id) figcaption.setAttribute('id',`${id}`)
+    
+    return figcaption
+
+}
+
+const figure = (styleClass, id)=>{
+
+    const figure = document.createElement('figure')
+    if(styleClass) figure.setAttribute('class',`${styleClass}`)
+    if(id) figure.setAttribute('id',`${id}`)
+    
+    return figure
+
+}
+
+export { parrafo, image, button, div, enlace, figc, figure }
