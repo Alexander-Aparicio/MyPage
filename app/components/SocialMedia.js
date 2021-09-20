@@ -10,7 +10,7 @@ const SocialMedia = ()=>{
         {redSocial:'Github', id:'https://github.com/Alexander-Aparicio?tab=repositories'},
         {redSocial:'Facebook', id:'https://www.facebook.com/alexander14mr2015'},
         {redSocial:'Instagram', id:'https://www.instagram.com/alexmr1201/'},
-        {redSocial:'WhatsApp', id:'https://api.whatsapp.com/send?phone=51924998093'}
+        {redSocial:'Whatsapp', id:'https://api.whatsapp.com/send?phone=51924998093'}
 
     ]
 
