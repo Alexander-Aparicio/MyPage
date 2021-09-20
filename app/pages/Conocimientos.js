@@ -13,7 +13,7 @@ const Conocimientos = async()=>{
     
 // ----------------------------------------------------------------------------
 
-    const url = 'http://localhost:5500/app/json/Specialties.json'
+    const url = 'https://alexander-aparicio.github.io/app/json/Specialties.json'
 
     const fragmentBar = d.createDocumentFragment()
 

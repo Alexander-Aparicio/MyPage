@@ -45,7 +45,7 @@ const ProjectCards = async()=>{
         return card
     }
 
-    const URL = 'http://localhost:5500/app/json/cards.json'
+    const URL = 'https://alexander-aparicio.github.io/app/json/cards.json'
 
     await fetch(URL).then((res)=>{
 
