@@ -614,6 +614,8 @@ strong{font-weight: bold;}
 .contactoPage .h2 {
     font-size: 3rem;
     color: var(--cHighlighted);
+    width: 100%;
+    text-align: center;
 }
 .contactoPage ul {
     margin-top: 50px;
@@ -645,6 +647,7 @@ strong{font-weight: bold;}
 .nameItem {
     font-size: 1.6rem;
     color: var(--cWhite);
+    margin-left: 15px;
 }
 
 /* FORMULARIO */
