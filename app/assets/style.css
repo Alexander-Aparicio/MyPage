@@ -48,7 +48,7 @@ button,select,input[type="submit"]{cursor: pointer;}
     --cTitle: #f4f4f4;
     --cHighlighted: #FCD51B;
     --bgPopup: rgba(46, 42, 42, 0.88);
-    --cError: red;
+    --cError: rgb(211, 16, 16);
     /* FUENTES */
     --fText: latoRegular, sans-serif;
     --fTitle: passionOneBold, sans-serif;
@@ -600,14 +600,56 @@ strong{font-weight: bold;}
 /* ---------------------- */
 
 /*---------------------- CONTACTO ------------------------*/
-/* FORMULARIO */
-.sect-form{
-    padding-top: 15vh;
-    margin:auto;
-    padding-bottom: 50px;
+.contactoPage{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom:50px;
 }
+.contactoPage .h2 {
+    font-size: 3rem;
+    color: var(--cHighlighted);
+}
+.contactoPage ul {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: var(--cMain);
+    border-radius: 7px;
+    padding: 15px;
+}
+.itemContact {
+    margin: 15px;
+    width: 100%;
+}
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+.iconContact {
+    width: 25px;
+    filter: drop-shadow(1px 1px 1px #282828);
+}
+.nameItem {
+    font-size: 1.6rem;
+    color: var(--cWhite);
+}
+
+/* FORMULARIO */
 .contact-form{
-    max-width: 400px;
+    max-width: 320px;
     padding: 7% 9% 6% 9%;
     background: #E0E0E0;
     border-radius: 10px;

@@ -145,7 +145,7 @@ const Contacto = ()=>{
         },
         {
             campo:'WhatsApp',
-            icon:'app/assets/logos-svg/Whatsapp.svg',
+            icon:'app/assets/logos-svg/whatsapp2.svg',
             text:'924 998 093'
         }
     ]
@@ -161,7 +161,7 @@ const Contacto = ()=>{
 
         const img = image(`${el.campo}`,`${el.icon}`,'iconContact')
 
-        const figcaption = figc(`${el.campo}`,'nameItem')
+        const figcaption = figc(`${el.text}`,'nameItem')
 
         card.appendChild(img)
         card.appendChild(figcaption)
