@@ -130,22 +130,22 @@ const Contacto = ()=>{
     const items = [
         {
             campo:'Cel.',
-            icon:'app/assets/logos-svg/',
+            icon:'app/assets/logos-svg/mobile.svg',
             text:'924998093'
         },
         {
             campo:'Residencia',
-            icon:'app/assets/logos-svg/',
+            icon:'app/assets/logos-svg/locate.svg',
             text:'Lima, Perú'
         },
         {
             campo:'Telegram',
-            icon:'app/assets/logos-svg/',
+            icon:'app/assets/logos-svg/telegram.svg',
             text:'@Alexander_Aparicio'
         },
         {
             campo:'WhatsApp',
-            icon:'app/assets/logos-svg/',
+            icon:'app/assets/logos-svg/Whatsapp.svg',
             text:'924 998 093'
         }
     ]
