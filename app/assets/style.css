@@ -709,7 +709,9 @@ strong{font-weight: bold;}
 }
 .msj-envio a{
     display: block;
-    width: 35px;
+}
+.msj-envio img {
+    width: 50px;
 }
 .loader{
     width: 35px;

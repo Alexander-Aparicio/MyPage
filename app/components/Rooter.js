@@ -20,7 +20,6 @@ const Rooter = ()=>{
     const regExp = /^./
 
     let { hash } = location
-    console.log(location)
 
     const Handler = async()=>{
 

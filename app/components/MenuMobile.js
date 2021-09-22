@@ -9,7 +9,7 @@ const MenuMobile = ()=>{
     addClass($nav,'menuMobile')
 
     const $menuMobile = d.querySelector('.menuMobile')
-    console.log($menuMobile)
+    
     const containerHamburguer = d.createElement('div')
     containerHamburguer.setAttribute('class','boxHamburguer boxShadowStrong')
     

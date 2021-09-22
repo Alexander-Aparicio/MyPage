@@ -2,8 +2,6 @@ const Navigation = ()=>{
 
     const d = document
 
-    console.log('estoy en navigation')
-
     d.addEventListener('click',(e)=>{
 
         const $conocimientos = d.getElementById('Conocimientos')

@@ -24,11 +24,9 @@ const Contacto = ()=>{
     const formContent =`
     <select name="consulta" id="tema" class="desplegable-section6"  title="Por favor escoja un tema" required>
         <option value="">Escoge el tema</option>
-        <option value="cms">CMS</option>
-        <option value="analytics">Analytics</option>
-        <option value="seo">SEO</option>
-        <option value="sem">SEM</option>
-        <option value="servicios">Servicios</option>
+        <option value="cms">Oferta Laboral</option>
+        <option value="analytics">Servicio Freelancer</option>
+        <option value="seo">Sitio web en WordPress</option>
         <option value="otro">Otro</option>
     </select>
     <input type="text" name="name" placeholder="Ingresa tu nombre"

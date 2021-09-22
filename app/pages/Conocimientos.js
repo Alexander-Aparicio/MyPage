@@ -19,8 +19,6 @@ const Conocimientos = async()=>{
 
     await fetch(url).then((res)=>{
 
-        console.log(res)
-
         return res.ok ? res.json() : Promise.reject(error)
 
     }).then((res)=>{
@@ -36,7 +34,6 @@ const Conocimientos = async()=>{
             barBox.setAttribute('class','barBox')
 
             const idP = `${el.tema}`.replace(/\s+/g, '')
-            console.log(idP)
     
             const bar = d.createElement('div')
             bar.setAttribute('class',`bar ${idP} boxShadowStrong`)

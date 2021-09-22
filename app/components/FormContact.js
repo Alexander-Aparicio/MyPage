@@ -24,7 +24,7 @@ const Form = ()=> {
             let $input = e.target,
                 patron = $input.pattern || $input.dataset.pattern;
 
-            if (patron && $input.value !=="") {
+            if (patron && $input.value !="") {
 
                 let regex = new RegExp(patron)
                 return !regex.exec($input.value)
@@ -32,7 +32,7 @@ const Form = ()=> {
                 :document.getElementById($input.name).classList.remove("activacion")
 
             }
-            if (patron && $input.value =="") {
+            if (patron && $input.value ==="") {
 
                 document.getElementById($input.name).classList.remove("activacion")
 

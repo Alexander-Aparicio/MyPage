@@ -30,7 +30,7 @@ const SobreMi = ()=>{
     const list = [
         'Soy de caracter tranquilo 🙂.',
         'Me interesa la programación y SEO 🤩.',
-        'Estoy formandome como FrontEnd pero luego pienso expandirme al BackEnd 🗃️.',
+        'Actualmente estoy formandome para ser un crack en el Front end y luego pasar al Back end 🗃️.',
         'Los lenguajes en los que quiero ser un crack son Javascript, Typescript y Python 🧰.',
         'Me gusta ver You tube o escuchar Spotify sobre temas de SEO 🚀 y desarrollo web.💻',
         'Me encanta jugar y enseñar sobre Tenis de mesa 🏓.',
