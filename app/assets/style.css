@@ -699,9 +699,9 @@ strong{font-weight: bold;}
     justify-content:space-between;
 }
 .msj-envio{
-    font-size: 0.9rem;
-    color: var(--main);
-    font-family: var(--tmenu);
+    font-size: 1.2rem;
+    color: var(--cDark);
+    font-family: var(--fText);
     height: 60px;
     /* display: flex; */
     justify-content: center;
@@ -711,11 +711,11 @@ strong{font-weight: bold;}
 }
 .msj-envio a{
     display: block;
-    width: 45px;
+    width: 35px;
 }
 .loader{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-right: 10px;
 }
 .btn-section6{
@@ -725,15 +725,12 @@ strong{font-weight: bold;}
     margin-top: 20px;;
     margin-bottom: 2%;
     color:var(--ctexto2) !important;
-    outline: none;
-    border-style: none;
     border-radius: 10px;
     font-size: 1rem;
-    font-family: var(--p);
+    font-family: var(--fText);
     cursor: pointer;
-    background: var(--bgElement1);
+    background: var(--bgBody);
 }
-
 /* ---------- MEDIA Q ---------*/
 @media screen and (max-width: 350px){html{font-size: 8px;}}
 
@@ -1005,6 +1002,15 @@ strong{font-weight: bold;}
 .transtionSlider{animation: open-opacity 1s linear;}
 .hide{visibility: hidden;}
 .visible{visibility: visible;}
+.activacion{
+    display: block !important;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: #295359e0;
+    color: var(--cWhite);
+    font-family: var(--fText);
+    font-size: 1.4rem;
+}
 .boxShadowStrong{
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
