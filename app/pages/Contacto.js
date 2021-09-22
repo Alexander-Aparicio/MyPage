@@ -144,6 +144,11 @@ const Contacto = ()=>{
             campo:'WhatsApp',
             icon:'app/assets/logos-svg/whatsapp2.svg',
             text:'924 998 093'
+        },
+        {
+            campo:'Gmail',
+            icon:'app/assets/logos-svg/gmail-email.svg',
+            text:'alexaparicio.web@gmail.com' 
         }
     ]
 
