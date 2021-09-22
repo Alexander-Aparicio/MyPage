@@ -30,7 +30,7 @@ const Contacto = ()=>{
         <option value="otro">Otro</option>
     </select>
     <input type="text" name="name" placeholder="Ingresa tu nombre"
-        title="Nombre debe comenzar con una mayúscula seguido de minúsculas y sólo acepta letras y espacios en blanco" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required>
+        title="Nombre debe comenzar con una mayúscula seguido de minúsculas y sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
     <input type="email" name="email" placeholder="Ingresa tu correo" title="Email incorrecto"
         pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
     <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
