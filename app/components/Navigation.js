@@ -10,6 +10,7 @@ const Navigation = ()=>{
         const $portafolio = d.getElementById('Portafolio')
         const $sobreMi = d.getElementById('Sobremí')
         const $home = d.getElementById('Inicio')
+        const $Contact = d.getElementById('Contacto')
 
        if(e.target === $conocimientos){
 
@@ -29,6 +30,11 @@ const Navigation = ()=>{
        if(e.target === $home){
 
         window.location.hash = '#/'
+
+       }
+       if(e.target === $Contact){
+
+        window.location.hash = '#/Contacto'
 
        }
 

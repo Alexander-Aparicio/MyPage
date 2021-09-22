@@ -12,8 +12,8 @@ const Menu = ()=>{
         {page:'Inicio', emoji:'🏠'},
         {page:'Portafolio', emoji:'📂'},
         {page:'Conocimientos', emoji:'📒'},
-        {page:'Sobre mí', emoji:'🧑'}
-
+        {page:'Sobre mí', emoji:'🧑'},
+        {page:'Contacto', emoji:'📲'}
     ]
 
     const menuFragment = d.createDocumentFragment()
