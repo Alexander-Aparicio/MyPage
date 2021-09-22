@@ -1,8 +1,10 @@
 import { Conocimientos } from "../pages/Conocimientos.js"
+import { Contacto } from "../pages/Contacto.js"
 import { Inicio } from "../pages/Inicio.js"
 import { Portafolio } from "../pages/Portafolio.js"
 import { SobreMi } from "../pages/SobreMi.js"
 import { MenuEffects } from "./Effects.js"
+import { Form } from "./FormContact.js"
 import { ProjectCards } from "./GetProjectCards.js"
 import { RevertFixed } from "./helpers/RevertFixed.js"
 import { Menu, MenuTop } from "./Menu.js"
@@ -80,6 +82,19 @@ const Rooter = ()=>{
                 RevertFixed('footer')
                 MenuMobile()
          
+                break;
+
+            case `#/Contacto`:
+
+                $main.innerHTML = ''
+                    
+                $main.appendChild(SocialMedia())
+                $main.appendChild(Contacto())
+                MenuTop()
+                RevertFixed('footer')
+                MenuMobile()
+                Form()
+             
                 break;
         
             default: 

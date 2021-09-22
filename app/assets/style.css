@@ -599,6 +599,96 @@ strong{font-weight: bold;}
 }
 /* ---------------------- */
 
+/*---------------------- CONTACTO ------------------------*/
+/* FORMULARIO */
+.sect-form{
+    padding-top: 15vh;
+    margin:auto;
+    padding-bottom: 50px;
+}
+.contact-form{
+    max-width: 400px;
+    padding: 7% 9% 6% 9%;
+    background: #E0E0E0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.contact-form input,
+.contact-form select{
+    margin-top: 1.2rem;
+    margin-bottom: 0rem;
+    width: 100%;
+    height: 35px;
+    font-size: 1.3rem;
+    font-family: var(--tautor);
+    color: #515151;
+    border-radius: 8px;
+    border-style: none;
+    border: solid thin #515151;
+    padding-left: 10px;
+}
+.contact-form textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    font-size: 1.3rem;
+    font-family: var(--tautor);
+    color: #515151;
+    border-radius: 8px;
+    border-style: none;
+    border: solid thin #515151;
+    padding: 11px;
+    margin-top: 1.2rem;
+}
+.contact-form-error{
+    padding: 5px;
+    margin-top: 0rem;
+    width: 100%;
+    background-color: var(--main);
+    color: var(--fondo-claro);
+    transition: all 800ms ease;
+}
+.div-enviar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.msj-envio{
+    font-size: 0.9rem;
+    color: var(--main);
+    font-family: var(--tmenu);
+    height: 60px;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.msj-envio a{
+    display: block;
+    width: 45px;
+}
+.loader{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.btn-section6{
+    width: 47% !important;
+    height: 2.6rem;
+    margin-right: 0%;
+    margin-top: 20px;;
+    margin-bottom: 2%;
+    color:var(--ctexto2) !important;
+    outline: none;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--p);
+    cursor: pointer;
+    background: var(--bgElement1);
+}
+
 /* ---------- MEDIA Q ---------*/
 @media screen and (max-width: 350px){html{font-size: 8px;}}
 
