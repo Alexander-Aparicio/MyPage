@@ -1,5 +1,5 @@
-import { div, figc, figure, image } from "../components/helpers/Boxes"
-import { TitleOfPages } from "../components/helpers/Titles"
+import { div, figc, figure, image } from "../components/helpers/Boxes.js"
+import { TitleOfPages } from "../components/helpers/Titles.js"
 
 const Contacto = ()=>{
 
