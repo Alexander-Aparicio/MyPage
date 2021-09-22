@@ -166,7 +166,7 @@ const Contacto = ()=>{
         card.appendChild(img)
         card.appendChild(figcaption)
 
-        i.appendChild(figure)
+        i.appendChild(card)
 
         fragment.appendChild(i)
     })
