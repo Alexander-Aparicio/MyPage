@@ -32,6 +32,11 @@ const Form = ()=> {
                 :document.getElementById($input.name).classList.remove("activacion")
 
             }
+            if (patron && $input.value =="") {
+
+                document.getElementById($input.name).classList.remove("activacion")
+
+            }
         }
     })
 
