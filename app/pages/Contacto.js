@@ -30,7 +30,7 @@ const Contacto = ()=>{
         <option value="otro">Otro</option>
     </select>
     <input type="text" name="name" id="nameInput" placeholder="Ingresa tu nombre"
-        title="Nombre debe comenzar con una mayúscula seguido de minúsculas y sólo acepta letras y espacios en blanco" required>
+        title="Nombre sólo acepta letras y espacios en blanco" required>
     <input type="email" id="emailInput" name="email" placeholder="Ingresa tu correo" title="Email incorrecto" required>
     <textarea name="comments" id="textareaInput" cols="50" rows="10" placeholder="Déjame tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" required></textarea>
     <div class="div-enviar">
