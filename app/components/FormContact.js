@@ -4,6 +4,9 @@ const Form = ()=> {
         $loader = document.querySelector(".loader"),
         $msjEnvio = document.querySelector(".msj-envio"),
         $inputsForm = document.querySelectorAll(".contact-form [required]"),
+        $inputName = document.getElementById("nameInput"),
+        $inputEmail = document.getElementById("emailInput"),
+        $inputTextarea = document.getElementById("textareaInput"),
         $formulario = document.querySelector(".contact-form");
        
 
@@ -19,10 +22,48 @@ const Form = ()=> {
 
     document.addEventListener("keyup", (e) => {
 
-        if (e.target.matches(".contact-form [required]")){
+        if (e.target === $inputName){
 
             let $input = e.target,
-                patron = $input.pattern || $input.dataset.pattern;
+                patron = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü+(\s)]+$/
+
+            if (patron && $input.value !="") {
+
+                let regex = new RegExp(patron)
+                return !regex.exec($input.value)
+                ?document.getElementById($input.name).classList.add("activacion")
+                :document.getElementById($input.name).classList.remove("activacion")
+
+            }
+            if (patron && $input.value ==="") {
+
+                document.getElementById($input.name).classList.remove("activacion")
+
+            }
+        }
+        if (e.target === $inputEmail){
+
+            let $input = e.target,
+                patron = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
+
+            if (patron && $input.value !="") {
+
+                let regex = new RegExp(patron)
+                return !regex.exec($input.value)
+                ?document.getElementById($input.name).classList.add("activacion")
+                :document.getElementById($input.name).classList.remove("activacion")
+
+            }
+            if (patron && $input.value ==="") {
+
+                document.getElementById($input.name).classList.remove("activacion")
+
+            }
+        }
+        if (e.target === $inputTextarea){
+
+            let $input = e.target,
+                patron = /^.{1,255}$/
 
             if (patron && $input.value !="") {
 

@@ -29,11 +29,10 @@ const Contacto = ()=>{
         <option value="seo">Sitio web en WordPress</option>
         <option value="otro">Otro</option>
     </select>
-    <input type="text" name="name" placeholder="Ingresa tu nombre"
-        title="Nombre debe comenzar con una mayúscula seguido de minúsculas y sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü+(\s)]+$" required>
-    <input type="email" name="email" placeholder="Ingresa tu correo" title="Email incorrecto"
-        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-    <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+    <input type="text" name="name" id="nameInput" placeholder="Ingresa tu nombre"
+        title="Nombre debe comenzar con una mayúscula seguido de minúsculas y sólo acepta letras y espacios en blanco" required>
+    <input type="email" id="emailInput" name="email" placeholder="Ingresa tu correo" title="Email incorrecto" required>
+    <textarea name="comments" id="textareaInput" cols="50" rows="10" placeholder="Déjame tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" required></textarea>
     <div class="div-enviar">
         <div class="msj-envio none">
         <a href="https://www.gifsanimados.org/cat-pandas-345.htm">
