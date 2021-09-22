@@ -118,7 +118,7 @@ const Contacto = ()=>{
     <p class="msj-error"></p>
     `
 
-    form.appendChild(formContent)
+    form.innerHTML = formContent
 
     // ----------------------------------
     boxContent.appendChild(form)
